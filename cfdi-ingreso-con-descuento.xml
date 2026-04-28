@@ -1,70 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <cfdi:Comprobante 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:cfdi="http://www.sat.gob.mx/cfd/4" 
     xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" 
     Version="4.0" 
-    Serie="A" 
-    Folio="100" 
-    Fecha="2026-04-28T13:30:00" 
-    Sello="" 
-    FormaPago="01" 
-    NoCertificado="30001000000500003416" 
-    Certificado="" 
-    SubTotal="1000.00" 
-    Descuento="100.00" 
+    Serie="Serie" 
+    Folio="Folio" 
+    Fecha="2024-04-29T00:00:00" 
+    FormaPago="99" 
+    SubTotal="280.00" 
+    Descuento="30.00" 
     Moneda="MXN" 
-    Total="1044.00" 
+    Total="290.00" 
     TipoDeComprobante="I" 
     Exportacion="01" 
     MetodoPago="PUE" 
-    LugarExpedicion="01234">
-    
-    <cfdi:Emisor 
-        Rfc="EKU9003173C9" 
-        Nombre="ESCUELA KEMPER URGATE" 
-        RegimenFiscal="601"/>
-    
-    <cfdi:Receptor 
-        Rfc="URE1804291H5" 
-        Nombre="UNIVERSIDAD ROBOTICA ESPAÑOLA" 
-        DomicilioFiscalReceptor="65000" 
-        RegimenFiscalReceptor="601" 
-        UsoCFDI="G03"/>
-    
+    LugarExpedicion="20000"
+    xmlns:cfdi="http://www.sat.gob.mx/cfd/4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    NoCertificado="30001000000500003416" 
+    Certificado="">
+    <cfdi:InformacionGlobal Periodicidad="01" Meses="09" Año="2024" />
+    <cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" RegimenFiscal="601" />
+    <cfdi:Receptor Rfc="XAXX010101000" Nombre="PUBLICO EN GENERAL" DomicilioFiscalReceptor="20000" RegimenFiscalReceptor="616" UsoCFDI="CP01" />
     <cfdi:Conceptos>
-        <cfdi:Concepto 
-            ClaveProdServ="43231501" 
-            NoIdentificacion="001" 
-            Cantidad="1" 
-            ClaveUnidad="E48" 
-            Unidad="Servicio" 
-            Descripcion="Licencia de Software de Prueba" 
-            ValorUnitario="1000.00" 
-            Importe="1000.00" 
-            Descuento="100.00" 
-            ObjetoImp="02">
+        <cfdi:Concepto ClaveProdServ="50211503" Cantidad="1.0" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Cigarros" ValorUnitario="100.00" Importe="100.00" Descuento="10.00" ObjetoImp="02">
             <cfdi:Impuestos>
                 <cfdi:Traslados>
-                    <cfdi:Traslado 
-                        Base="900.00" 
-                        Impuesto="002" 
-                        TipoFactor="Tasa" 
-                        TasaOCuota="0.160000" 
-                        Importe="144.00"/>
+                    <cfdi:Traslado Base="90.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="14.40" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="12131707" Cantidad="20.0" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Encendedores" ValorUnitario="9.00" Importe="180.00" Descuento="20.00" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="160.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="25.60" />
                 </cfdi:Traslados>
             </cfdi:Impuestos>
         </cfdi:Concepto>
     </cfdi:Conceptos>
-    
-    <cfdi:Impuestos TotalImpuestosTrasladados="144.00">
+    <cfdi:Impuestos TotalImpuestosTrasladados="40.00">
         <cfdi:Traslados>
-            <cfdi:Traslado 
-                Base="900.00" 
-                Impuesto="002" 
-                TipoFactor="Tasa" 
-                TasaOCuota="0.160000" 
-                Importe="144.00"/>
+            <cfdi:Traslado Base="250.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="40.00" />
         </cfdi:Traslados>
     </cfdi:Impuestos>
 </cfdi:Comprobante>

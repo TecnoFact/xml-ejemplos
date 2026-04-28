@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante 
+    xmlns:cfdi="http://www.sat.gob.mx/cfd/4" 
+    xmlns:cartaporte31="http://www.sat.gob.mx/CartaPorte31" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/CartaPorte31 http://www.sat.gob.mx/sitio_internet/cfd/CartaPorte/CartaPorte31.xsd" 
+    Version="4.0" Serie="CP" Folio="100" Fecha="2026-04-28T12:10:00" Sello="" NoCertificado="00001000000504465930" Certificado="" SubTotal="0.00" Moneda="XXX" Total="0.00" TipoDeComprobante="T" Exportacion="01" LugarExpedicion="64000">
+
+    <cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" RegimenFiscal="601"/>
+    <cfdi:Receptor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="601" UsoCFDI="S01"/>
+
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="24111507" Cantidad="1" ClaveUnidad="H87" Descripcion="Traslado de Mercancía" ValorUnitario="0.00" Importe="0.00" ObjetoImp="01"/>
+    </cfdi:Conceptos>
+
+    <cfdi:Complemento>
+        <cartaporte31:CartaPorte Version="3.1" IdCCP="CCC12345-6789-4000-A000-1234567890AB" TranspInternac="No" TotalDistRec="150.00">
+            
+            <cartaporte31:Ubicaciones>
+                <cartaporte31:Ubicacion TipoUbicacion="Origen" RFCRemitenteDestinatario="EKU9003173C9" FechaHoraSalidaLlegada="2026-04-28T13:00:00">
+                    <cartaporte31:Domicilio Calle="Av. Principal" CodigoPostal="64000" Estado="NLE" Pais="MEX"/>
+                </cartaporte31:Ubicacion>
+                <cartaporte31:Ubicacion TipoUbicacion="Destino" RFCRemitenteDestinatario="EKU9003173C9" FechaHoraSalidaLlegada="2026-04-28T18:00:00" DistanciaRecorrida="150.00">
+                    <cartaporte31:Domicilio Calle="Calle Destino" CodigoPostal="01000" Estado="CMX" Pais="MEX"/>
+                </cartaporte31:Ubicacion>
+            </cartaporte31:Ubicaciones>
+
+            <cartaporte31:Mercancias PesoBrutoTotal="500.00" UnidadPeso="KGM" NumTotalMercancias="1">
+                <cartaporte31:Mercancia BienesTransp="24111507" Descripcion="Cajas de cartón" Cantidad="100" ClaveUnidad="H87" PesoEnKg="500.00" MaterialPeligroso="No">
+                </cartaporte31:Mercancia>
+                
+                <cartaporte31:Autotransporte PermisoSCT="TPAF01" NumPermisoSCT="123456789">
+                    <cartaporte31:IdentificacionVehicular ConfigVehicular="C2" PlacaVM="AAA111A" AnioModeloVM="2022"/>
+                    <cartaporte31:Seguros PolizaRespCivil="999999" AseguraRespCivil="Seguros Atlas"/>
+                </cartaporte31:Autotransporte>
+            </cartaporte31:Mercancias>
+
+            <cartaporte31:FiguraTransporte>
+                <cartaporte31:TiposFigura TipoFigura="01" RFCFigura="RFC_DEL_CHOFER" NumLicencia="1234567890">
+                    <cartaporte31:NombreFigura>JUAN PEREZ LOPEZ</cartaporte31:NombreFigura>
+                </cartaporte31:TiposFigura>
+            </cartaporte31:FiguraTransporte>
+
+        </cartaporte31:CartaPorte>
+    </cfdi:Complemento>
+</cfdi:Comprobante>

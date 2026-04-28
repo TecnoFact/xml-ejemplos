@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante 
+    xmlns:cfdi="http://www.sat.gob.mx/cfd/4" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" 
+    Version="4.0" 
+    Serie="NC" 
+    Folio="500" 
+    Fecha="2026-04-28T12:15:00" 
+    Sello="" 
+    FormaPago="15" 
+    NoCertificado="00001000000504465930" 
+    Certificado="" 
+    SubTotal="100.00" 
+    Moneda="MXN" 
+    Total="116.00" 
+    TipoDeComprobante="E" 
+    Exportacion="01" 
+    MetodoPago="PUE" 
+    LugarExpedicion="64000">
+    
+    <cfdi:CfdiRelacionados TipoRelacion="01">
+        <cfdi:CfdiRelacionado UUID="5fb2822e-848e-473d-8698-3f5904d02636"/>
+    </cfdi:CfdiRelacionados>
+
+    <cfdi:Emisor 
+        Rfc="EKU9003173C9" 
+        Nombre="ESCUELA KEMPER URGATE" 
+        RegimenFiscal="601"/>
+        
+    <cfdi:Receptor 
+        Rfc="URE1804291H5" 
+        Nombre="UNIVERSIDAD DE REPOSTERIA Y ECOLOGIA" 
+        DomicilioFiscalReceptor="64000" 
+        RegimenFiscalReceptor="601" 
+        UsoCFDI="G02"/> <cfdi:Conceptos>
+        <cfdi:Concepto 
+            ClaveProdServ="84111506" NoIdentificacion="NC-01" 
+            Cantidad="1" 
+            ClaveUnidad="ACT" 
+            Unidad="Actividad" 
+            Descripcion="Descuento aplicado a la factura A-12345" 
+            ValorUnitario="100.00" 
+            Importe="100.00" 
+            ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado 
+                        Base="100.00" 
+                        Impuesto="002" 
+                        TipoFactor="Tasa" 
+                        TasaOCuota="0.160000" 
+                        Importe="16.00"/>
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+    
+    <cfdi:Impuestos TotalImpuestosTrasladados="16.00">
+        <cfdi:Traslados>
+            <cfdi:Traslado 
+                Base="100.00" 
+                Impuesto="002" 
+                TipoFactor="Tasa" 
+                TasaOCuota="0.160000" 
+                Importe="16.00"/>
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+</cfdi:Comprobante>

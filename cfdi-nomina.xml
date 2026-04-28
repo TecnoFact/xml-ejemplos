@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante 
+    xmlns:cfdi="http://www.sat.gob.mx/cfd/4" 
+    xmlns:nom12="http://www.sat.gob.mx/nomina12" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/nomina12 http://www.sat.gob.mx/sitio_internet/cfd/nomina/nomina12.xsd" 
+    Version="4.0" Serie="NOM" Folio="55" Fecha="2026-04-28T12:30:00" Sello="" NoCertificado="00001000000504465930" Certificado="" 
+    SubTotal="5000.00" Descuento="450.00" Moneda="MXN" Total="4550.00" TipoDeComprobante="N" Exportacion="01" LugarExpedicion="64000">
+
+    <cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" RegimenFiscal="601"/>
+    
+    <cfdi:Receptor Rfc="URE1804291H5" Nombre="UNIVERSIDAD DE REPOSTERIA Y ECOLOGIA" DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="605" UsoCFDI="CN01"/>
+
+    <cfdi:Conceptos>
+        <cfdi:Concepto 
+            ClaveProdServ="84111505" 
+            Cantidad="1" 
+            ClaveUnidad="ACT" 
+            Descripcion="Pago de nómina" 
+            ValorUnitario="5000.00" 
+            Importe="5000.00" 
+            Descuento="450.00" 
+            ObjetoImp="01"/> </cfdi:Conceptos>
+
+    <cfdi:Complemento>
+        <nom12:Nomina Version="1.2" TipoNomina="O" FechaPago="2026-04-28" FechaInicialPago="2026-04-15" FechaFinalPago="2026-04-30" NumDiasPagados="15.000" TotalPercepciones="5000.00" TotalDeducciones="450.00">
+            
+            <nom12:Emisor RegistroPatronal="A1234567890"/>
+            
+            <nom12:Receptor Curp="CURP123456HDFRRR01" NumSeguridadSocial="12345678901" FechaInicioRelLaboral="2020-01-01" Antigüedad="P328W" TipoContrato="01" Sindicalizado="No" TipoJornada="01" TipoRegimen="02" NumEmpleado="001" PeriodicidadPago="04" Banco="002" CuentaBancaria="002180000000000001" SalarioDiarioIntegrado="350.00" ClaveEntFed="NLE"/>
+
+            <nom12:Percepciones TotalSueldos="5000.00" TotalGravado="5000.00" TotalExento="0.00">
+                <nom12:Percepcion TipoPercepcion="001" Clave="P001" Concepto="Sueldo Base" ImporteGravado="5000.00" ImporteExento="0.00"/>
+            </nom12:Percepciones>
+
+            <nom12:Deducciones TotalOtrasDeducciones="0.00" TotalImpuestosRetenidos="450.00">
+                <nom12:Deduccion TipoDeduccion="002" Clave="D002" Concepto="ISR" Importe="450.00"/>
+            </nom12:Deducciones>
+
+        </nom12:Nomina>
+    </cfdi:Complemento>
+</cfdi:Comprobante>

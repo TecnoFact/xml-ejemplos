@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante 
+    xmlns:cfdi="http://www.sat.gob.mx/cfd/4" 
+    xmlns:pago20="http://www.sat.gob.mx/Pagos20" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/Pagos20 http://www.sat.gob.mx/sitio_internet/cfd/Pagos/Pagos20.xsd" 
+    Version="4.0" Serie="P" Folio="200" Fecha="2026-04-28T13:00:00" Sello="" NoCertificado="00001000000504465930" Certificado="" 
+    SubTotal="0" Moneda="XXX" Total="0" TipoDeComprobante="P" Exportacion="01" LugarExpedicion="64000">
+
+    <cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" RegimenFiscal="601"/>
+    <cfdi:Receptor Rfc="URE1804291H5" Nombre="UNIVERSIDAD DE REPOSTERIA Y ECOLOGIA" DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="601" UsoCFDI="CP01"/>
+
+    <cfdi:Conceptos>
+        <cfdi:Concepto 
+            ClaveProdServ="84111506" 
+            Cantidad="1" 
+            ClaveUnidad="ACT" 
+            Descripcion="Pago" 
+            ValorUnitario="0" 
+            Importe="0" 
+            ObjetoImp="01"/>
+    </cfdi:Conceptos>
+
+    <cfdi:Complemento>
+        <pago20:Pagos Version="2.0">
+            <pago20:Totales TotalTrasladosImpuestoIVA16="160.00" MontoTotalPagos="1160.00"/>
+            
+            <pago20:Pago FechaPago="2026-04-28T10:30:00" FormaDePagoP="03" MonedaP="MXN" TipoCambioP="1" Monto="1160.00" NumOperacion="12345">
+                
+                <pago20:DoctoRelacionado 
+                    IdDocumento="5fb2822e-848e-473d-8698-3f5904d02636" 
+                    Serie="A" Folio="12345" MonedaDR="MXN" EquivDR="1" 
+                    MetodoDePagoDR="PPD" NumParcialidad="1" 
+                    ImpSaldoAnt="1160.00" ImpPagado="1160.00" ImpSaldoInsoluto="0.00" 
+                    ObjetoImpDR="02">
+                    
+                    <pago20:ImpuestosDR>
+                        <pago20:TrasladosDR>
+                            <pago20:TrasladoDR 
+                                BaseDR="1000.00" 
+                                ImpuestoDR="002" 
+                                TipoFactorDR="Tasa" 
+                                TasaOCuotaDR="0.160000" 
+                                ImporteDR="160.00"/>
+                        </pago20:TrasladosDR>
+                    </pago20:ImpuestosDR>
+                </pago20:DoctoRelacionado>
+
+            </pago20:Pago>
+        </pago20:Pagos>
+    </cfdi:Complemento>
+</cfdi:Comprobante>

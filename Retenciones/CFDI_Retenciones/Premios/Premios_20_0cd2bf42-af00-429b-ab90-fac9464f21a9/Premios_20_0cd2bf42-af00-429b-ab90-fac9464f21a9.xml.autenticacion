@@ -1,0 +1,22 @@
+
+
+POST https://sc1-ret-cert-cses-autentica.southcentralus.cloudapp.azure.com/Autenticacion.svc HTTP/1.1
+Content-Type: application/soap+xml; charset=utf-8
+Host: sc1-ret-cert-cses-autentica.southcentralus.cloudapp.azure.com
+Content-Length: 1899
+Expect: 100-continue
+Accept-Encoding: gzip, deflate
+
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><s:Header><a:Action s:mustUnderstand="1">http://tempuri.org/IAutenticacion/Autentica</a:Action><a:MessageID>urn:uuid:1291411e-df2d-4c8e-a8ea-0cf44896984f</a:MessageID><a:ReplyTo><a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address></a:ReplyTo><a:To s:mustUnderstand="1">https://sc1-ret-cert-cses-autentica.southcentralus.cloudapp.azure.com/Autenticacion.svc</a:To><o:Security s:mustUnderstand="1" xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><u:Timestamp u:Id="_0"><u:Created>2024-11-22T02:31:06.153Z</u:Created><u:Expires>2024-11-22T02:36:06.153Z</u:Expires></u:Timestamp><c:SecurityContextToken u:Id="uuid-aff167dc-4a9d-4e8f-8bb8-842a0032c9a1-47" xmlns:c="http://schemas.xmlsoap.org/ws/2005/02/sc"><c:Identifier>urn:uuid:4085fbc3-ec4c-4fef-a651-c455667f7dd2</c:Identifier></c:SecurityContextToken><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#hmac-sha1"/><Reference URI="#_0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>gJxS1Pm9blxvvQjvPJZXVOn8Yog=</DigestValue></Reference></SignedInfo><SignatureValue>yqY3+XqfTj6JH8+VLlCveIARx4E=</SignatureValue><KeyInfo><o:SecurityTokenReference><o:Reference ValueType="http://schemas.xmlsoap.org/ws/2005/02/sc/sct" URI="#uuid-aff167dc-4a9d-4e8f-8bb8-842a0032c9a1-47"/></o:SecurityTokenReference></KeyInfo></Signature></o:Security></s:Header><s:Body><Autentica xmlns="http://tempuri.org/"/></s:Body></s:Envelope>
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: application/soap+xml; charset=utf-8
+Server: Microsoft-IIS/10.0
+Set-Cookie: ASP.NET_SessionId=khyhbrwsjso3fojmszbdjfjy; path=/; HttpOnly; SameSite=Lax
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 22 Nov 2024 02:31:13 GMT
+Content-Length: 1170
+
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><s:Header><a:Action s:mustUnderstand="1">http://tempuri.org/IAutenticacion/AutenticaResponse</a:Action><a:RelatesTo>urn:uuid:1291411e-df2d-4c8e-a8ea-0cf44896984f</a:RelatesTo><o:Security s:mustUnderstand="1" xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><u:Timestamp u:Id="_0"><u:Created>2024-11-22T02:31:13.998Z</u:Created><u:Expires>2024-11-22T02:36:13.998Z</u:Expires></u:Timestamp></o:Security></s:Header><s:Body><AutenticaResponse xmlns="http://tempuri.org/"><AutenticaResult>eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE3MzIyNDI2NzMsImV4cCI6MTczMjI3ODY3MywiaWF0IjoxNzMyMjQyNjczLCJpc3MiOiJtaVN1cGVySWRlbnRpdHlQcm92aWRlciIsImFjdG9ydCI6IjMzMzAzMDMwMzEzMDMwMzAzMDMwMzAzNTMwMzAzMDMwMzMzNDM1MzYifQ.ubu-4nMVqwL0R0fm7ysaqirltK5FnvfCKh_NaMkE7ZE&amp;wrap_subject=3330303031303030303030353030303033343536</AutenticaResult></AutenticaResponse></s:Body></s:Envelope>
+

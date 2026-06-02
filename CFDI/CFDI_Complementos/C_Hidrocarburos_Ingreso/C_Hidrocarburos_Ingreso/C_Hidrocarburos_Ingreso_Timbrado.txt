@@ -1,0 +1,94 @@
+
+
+POST https://sc1-cfd-cert-cses-recep.southcentralus.cloudapp.azure.com/Seguridad/Autenticacion.svc HTTP/1.1
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "http://tempuri.org/IAutenticacion/Autentica"
+Host: sc1-cfd-cert-cses-recep.southcentralus.cloudapp.azure.com
+Content-Length: 3797
+Accept-Encoding: gzip, deflate
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><s:Header><o:Security s:mustUnderstand="1" xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><u:Timestamp u:Id="_0"><u:Created>2024-11-22T02:07:24.612Z</u:Created><u:Expires>2024-11-22T02:12:24.612Z</u:Expires></u:Timestamp><o:BinarySecurityToken u:Id="uuid-9f4194be-65b3-4403-a4a2-132c3be44008-64" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">MIIFezCCA2OgAwIBAgIUMzAwMDEwMDAwMDA1MDAwMDM0NTYwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWxpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMjMwNTE4MTYyMzE0WhcNMjcwNTE4MTYyMzE0WjCBojEUMBIGA1UEAxMLU0FUIFBSVUVCQVMxFDASBgNVBCkTC1NBVCBQUlVFQkFTMRQwEgYDVQQKEwtTQVQgUFJVRUJBUzElMCMGA1UELRMcU1BSMTkwNjEzSTUyIC8gVkFEQTgwMDkyN0RKMzEeMBwGA1UEBRMVIC8gVkFEQTgwMDkyN0hTUlNSTDA1MRcwFQYDVQQLEw5DU0QgZGUgUHJ1ZWJhczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIpBiNLDihLxVZJOKDbNvqPS7u/dYvebKkgeVtHwHtyUHqsJ8gPgp67LIqAcb2tgCbmg+h6a9bWJ3d5+lh/4L6cnwVSENoRWIvdzFcQV7ccWBe6Rsaa3VrlyqevxrU9UjFX0zp8wvAKka+wxi/PGv60yuPTXcnYCynju2Q/wMOGQhHTlFyzyponLDGAFcDw6mGwZVZzoqg22hRG3Kpctj/sUwbPU4chTzmaFrA4wvLvgfnQhdVpYTQNs6v/bOyC2cedIvvarjsvOir7WWYwIcmJ/VSs0bskwoZ4TybfnSg02liVig/UQhhK4uY/11KYutWeASDGx9IqcSVBDftoYN4MCAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQELBQADggIBAJL2Da/juLsi5d96w/8EjB0ncpNJjTFzVJZ6by7NEuCmcURBN1msxJ4fZLIolKS+qPa0hUAMIQUGoB9KhS6MkljTZEUN73SfzHpCXqY+1I0+83fYOmW0HgcCHjsIA2gGvknl6CU/nNvp6B99sQU8bKsxxgG+IY0lpnAJGf5SpJbp8trfHIYYVyz43MdO1aYhzKIG+ZXjN+nLlvLN1zqPlk5fvxfrBN5iprfWzr+zKol3me8Wr41iNcwk0aPhsNUHpc+B5O/UePrK+pIi2T1uY0G5b8r9CI8V9H9gmKcupcSxQ1uk0FrZa2gb6GqC+1e8Ju9sPXZ+U4p1QRP7Q73eO5yWr90aJ30GmDvMpcFHfGtATguRjFK9FDv2K4z0g2dv7DK3JVjihIYXamUFYPJcy+J7o+Fz3v3IOl49ExsRrUmESEPF90Q/MyjVj0lP+/5PHYadLLGXqOxropk+ff4chwGulK+brOeFgzjwh5B3ZWKSVCTWiqsu771O7c0gj/6mEvjqUFj98xQhyEKCE1BnbdQB6RiyA4idfV19ghbqyyI85fj/eh/32oMzP0gcQmCp0PTQ46E5ZtZac3XpVAZDZ7VxuOoTIBPxn9RPmomrUMe0533X81C7qsAVXmPc046KmhVPyKzxXEq41VrXIbnX9f5P6AjFIFI2YwqgI+e9VbJk</o:BinarySecurityToken><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#_0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>mNSGnbHmqw6miZCvEF+gtdc0xZw=</DigestValue></Reference></SignedInfo><SignatureValue>RHrb+byjF+VWI8dk8DNswLX3jfoJfrSDWB6Ky88IFDMQQkwjU84qX1RLK3tmzcT6I5Yk9w4/E85DlMrCNP3/LO3jxtddi7EKNBiWq3diutMzIYL3PE0aBtXmcIZnEJ66EU2/VhPFQj8kk+A6RcboYrqJAD8qLO+1RU3uL6cRelMXUiEkvV5xus+2X9Tg9OXtQumjfdcDg61/YAnrIOf3SIdvPRXRR6sws2ejv+tL3EWxHN6/368/h7W+Djv7r3YOVgqv4eK7h+vm6z67ATcYTlF0nyb3UlqsmVGpHiekrkYD+5D83UrULMTqLgPctjRMnKGJhA8BZxlWR0c/YMgDWQ==</SignatureValue><KeyInfo><o:SecurityTokenReference><o:Reference ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" URI="#uuid-9f4194be-65b3-4403-a4a2-132c3be44008-64"/></o:SecurityTokenReference></KeyInfo></Signature></o:Security></s:Header><s:Body><Autentica xmlns="http://tempuri.org/"/></s:Body></s:Envelope>
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=utf-8
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+Request-Context: appId=cid-v1:d1c55297-934a-4a4a-9cf9-667abec548d6
+Access-Control-Expose-Headers: Request-Context
+X-Powered-By: ASP.NET
+Date: Fri, 22 Nov 2024 02:07:31 GMT
+Content-Length: 946
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><s:Header><o:Security s:mustUnderstand="1" xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><u:Timestamp u:Id="_0"><u:Created>2024-11-22T02:07:32.184Z</u:Created><u:Expires>2024-11-22T02:12:32.184Z</u:Expires></u:Timestamp></o:Security></s:Header><s:Body><AutenticaResponse xmlns="http://tempuri.org/"><AutenticaResult>eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE3MzIyNDEyMDYsImV4cCI6MTczMjI0MTgwNiwiaWF0IjoxNzMyMjQxMjA2LCJpc3MiOiJMb2FkUmVjZXBjaW9uIiwiYWN0b3J0IjoiMzMzMDMwMzAzMTMwMzAzMDMwMzAzMDM1MzAzMDMwMzAzMzM0MzUzNiJ9.ZTXnjrqGkOXLFZyRPQOe3L8XAG3r187Dm53y7wFzoX4%26wrap_subject%3d3330303031303030303030353030303033343536</AutenticaResult></AutenticaResponse></s:Body></s:Envelope>
+
+------------------------------------------------------------------
+
+PUT http://certificacionpac.blob.core.windows.net/certificacionpac/F04226DE-C1AA-46DC-AEAB-13C6E19E9498.xml?sr=c&si=WriteOnly&sig=eUe%2Fe7kcFcmiIzOVNgqbXd%2BjlIN3ZQd8fkQq3IsHQVQ%3D&api-version=2016-05-31&timeout=10 HTTP/1.1
+User-Agent: Azure-Storage/8.0.1 (.NET CLR 4.0.30319.42000; Win32NT 6.2.9200.0)
+x-ms-version: 2016-05-31
+Content-MD5: uP2iQIhkKHn0uSJw5pqFUQ==
+x-ms-blob-type: BlockBlob
+x-ms-client-request-id: 8f79d357-f553-4b76-a7b8-2ac637000f8b
+x-ms-meta-versionCFDI: 4.0
+Host: certificacionpac.blob.core.windows.net
+Content-Length: 5400
+
+<?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/IngresosHidrocarburos10 https://www.sat.gob.mx/sitio_internet/cfd/IngresosHidrocarburos10/IngresosHidrocarburos.xsd" Version="4.0" Serie="CP" Folio="11" Fecha="2024-11-21T19:00:53" Sello="HSUIvN2jEA1BU8uwkZkzQUBpPo+ycP7UYex6VfQj2kVyQcQQ9Tk4yqbYp8gHNBbgYlh36+x0PifNPwd38K4ouNrst8spLwq2R6L28laQyLj+QFvh9KuQ+kMOf9o4dJgGH+n8liiBsHI4U9ezGzgMKdx1G0txo9jg5IIqyzk4BPGXWfxn5Ir8qut1D3+zclYeuiNNz6NKjgyRmsrW/GFmgat+I6Ot3E9VYLBlUoyaIq110z7SUkkdzvD5jkCSEaISCT3Ts9u2hMb/mLwRz8gsPAKFSqSS9H7MjuwOeapAoCSD5XhlVYUBtMMS/Iu3yJxSxqdW9czOtkDXWEYh7r4Q9Q==" FormaPago="03" NoCertificado="30001000000500003416" Certificado="MIIFsDCCA5igAwIBAgIUMzAwMDEwMDAwMDA1MDAwMDM0MTYwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWxpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMjMwNTE4MTE0MzUxWhcNMjcwNTE4MTE0MzUxWjCB1zEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gVkFEQTgwMDkyN0RKMzEeMBwGA1UEBRMVIC8gVkFEQTgwMDkyN0hTUlNSTDA1MRMwEQYDVQQLEwpTdWN1cnNhbCAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtmecO6n2GS0zL025gbHGQVxznPDICoXzR2uUngz4DqxVUC/w9cE6FxSiXm2ap8Gcjg7wmcZfm85EBaxCx/0J2u5CqnhzIoGCdhBPuhWQnIh5TLgj/X6uNquwZkKChbNe9aeFirU/JbyN7Egia9oKH9KZUsodiM/pWAH00PCtoKJ9OBcSHMq8Rqa3KKoBcfkg1ZrgueffwRLws9yOcRWLb02sDOPzGIm/jEFicVYt2Hw1qdRE5xmTZ7AGG0UHs+unkGjpCVeJ+BEBn0JPLWVvDKHZAQMj6s5Bku35+d/MyATkpOPsGT/VTnsouxekDfikJD1f7A1ZpJbqDpkJnss3vQIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQsFAAOCAgEAFaUgj5PqgvJigNMgtrdXZnbPfVBbukAbW4OGnUhNrA7SRAAfv2BSGk16PI0nBOr7qF2mItmBnjgEwk+DTv8Zr7w5qp7vleC6dIsZFNJoa6ZndrE/f7KO1CYruLXr5gwEkIyGfJ9NwyIagvHHMszzyHiSZIA850fWtbqtythpAliJ2jF35M5pNS+YTkRB+T6L/c6m00ymN3q9lT1rB03YywxrLreRSFZOSrbwWfg34EJbHfbFXpCSVYdJRfiVdvHnewN0r5fUlPtR9stQHyuqewzdkyb5jTTw02D2cUfL57vlPStBj7SEi3uOWvLrsiDnnCIxRMYJ2UA2ktDKHk+zWnsDmaeleSzonv2CHW42yXYPCvWi88oE1DJNYLNkIjua7MxAnkNZbScNw01A6zbLsZ3y8G6eEYnxSTRfwjd8EP4kdiHNJftm7Z4iRU7HOVh79/lRWB+gd171s3d/mI9kte3MRy6V8MMEMCAnMboGpaooYwgAmwclI2XZCczNWXfhaWe0ZS5PmytD/GDpXzkX0oEgY9K/uYo5V77NdZbGAjmyi8cE2B2ogvyaN2XfIInrZPgEffJ4AB7kFA2mwesdLOCh0BLD9itmCve3A1FGR4+stO2ANUoiI3w3Tv2yQSg4bjeDlJ08lXaaFCLW2peEXMXjQUk7fmpb5MNuOUTW6BE=" SubTotal="10000.00" Moneda="MXN" Total="11600.00" TipoDeComprobante="I" Exportacion="01" MetodoPago="PUE" LugarExpedicion="11529" xmlns:cfdi="http://www.sat.gob.mx/cfd/4"><cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" RegimenFiscal="626" /><cfdi:Receptor Rfc="AAA000218L60" Nombre="AGRUPACION AGROPECUARIA DE ATOLUCA" DomicilioFiscalReceptor="73967" RegimenFiscalReceptor="601" UsoCFDI="G03" /><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="81111510" Cantidad="1.000000" ClaveUnidad="H87" Unidad="UNIDADES" Descripcion="Integración ormimania SAP - Tercer pago" ValorUnitario="10000.00" Importe="10000.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00" /></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1600.00"><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00" /></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento><ieeh:IngresosHidrocarburos Version="1.0" NumeroContrato="abcde" ContraprestacionPagadaOperador="11600.00" Porcentaje="1.00" xmlns:ieeh="http://www.sat.gob.mx/IngresosHidrocarburos10"><ieeh:DocumentoRelacionado FolioFiscalVinculado="abcdef01-fed0-cba1-abc2-def123456789" FechaFolioFiscalVinculado="2024-11-19" Mes="11" /></ieeh:IngresosHidrocarburos><tfd:TimbreFiscalDigital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital https://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="F04226DE-C1AA-46DC-AEAB-13C6E19E9498" FechaTimbrado="2024-11-21T20:01:01" RfcProvCertif="SPR190613I52" SelloCFD="HSUIvN2jEA1BU8uwkZkzQUBpPo+ycP7UYex6VfQj2kVyQcQQ9Tk4yqbYp8gHNBbgYlh36+x0PifNPwd38K4ouNrst8spLwq2R6L28laQyLj+QFvh9KuQ+kMOf9o4dJgGH+n8liiBsHI4U9ezGzgMKdx1G0txo9jg5IIqyzk4BPGXWfxn5Ir8qut1D3+zclYeuiNNz6NKjgyRmsrW/GFmgat+I6Ot3E9VYLBlUoyaIq110z7SUkkdzvD5jkCSEaISCT3Ts9u2hMb/mLwRz8gsPAKFSqSS9H7MjuwOeapAoCSD5XhlVYUBtMMS/Iu3yJxSxqdW9czOtkDXWEYh7r4Q9Q==" NoCertificadoSAT="30001000000500003456" SelloSAT="gijWPASKntsrD/BH+FcSv4wmC7qgQ0xFT5htehAYuAhrIMkU9/RqK+gtQsI9MDhrwC3J5V2h4yp7DgBOVx3JbO3j4FVF3kSyMS2e1mMjgBC8EdrQ9BzGcqmFTGJC7g5Myp0szi+w5WDXFoshIB+Ak9BGsWhKcP1aAydmrg46pZ8f026dH2GED+2ySv0wTg6lLhW/Q/NyTG1R6NQpidSJakH/e+4D/D9CuXu3e1LUMcVruE/7cBZzO3Qt3kuTcMTdQcnlewdvjZBiQ66kfYnOR8ucsKqr0vTmqQ3ECk+SorGXQP/vp65LJoWuE5GYPJFk8yLiN2KX1ckdN+F1NbjxRQ==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" /></cfdi:Complemento></cfdi:Comprobante>
+HTTP/1.1 201 Created
+Content-Length: 0
+Content-MD5: uP2iQIhkKHn0uSJw5pqFUQ==
+Last-Modified: Fri, 22 Nov 2024 02:07:32 GMT
+ETag: "0x8DD0A9A6CCBC21D"
+Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+x-ms-request-id: 72de4fec-c01e-0041-5c83-3c7c42000000
+x-ms-version: 2016-05-31
+x-ms-request-server-encrypted: true
+Date: Fri, 22 Nov 2024 02:07:31 GMT
+
+
+
+------------------------------------------------------------------
+
+PUT http://certificacionpac.blob.core.windows.net/certificacionpac/F04226DE-C1AA-46DC-AEAB-13C6E19E9498.xml?sr=c&si=WriteOnly&sig=eUe%2Fe7kcFcmiIzOVNgqbXd%2BjlIN3ZQd8fkQq3IsHQVQ%3D&api-version=2016-05-31&comp=metadata&timeout=10 HTTP/1.1
+User-Agent: Azure-Storage/8.0.1 (.NET CLR 4.0.30319.42000; Win32NT 6.2.9200.0)
+x-ms-version: 2016-05-31
+x-ms-client-request-id: 2310dc56-13fc-4eec-bb93-b7788db18b1d
+x-ms-meta-versionCFDI: 4.0
+Host: certificacionpac.blob.core.windows.net
+Content-Length: 0
+
+
+HTTP/1.1 200 OK
+Content-Length: 0
+Last-Modified: Fri, 22 Nov 2024 02:07:32 GMT
+ETag: "0x8DD0A9A6CD5D2CF"
+Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+x-ms-request-id: 72de5008-c01e-0041-7483-3c7c42000000
+x-ms-version: 2016-05-31
+x-ms-request-server-encrypted: true
+Date: Fri, 22 Nov 2024 02:07:31 GMT
+
+
+
+------------------------------------------------------------------
+
+POST https://sc1-cfd-cert-cses-recep.southcentralus.cloudapp.azure.com/Recepcion/CFDI40/RecibeCFDIService.svc HTTP/1.1
+Content-Type: text/xml; charset=utf-8
+Authorization: WRAP access_token="eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE3MzIyNDEyMDYsImV4cCI6MTczMjI0MTgwNiwiaWF0IjoxNzMyMjQxMjA2LCJpc3MiOiJMb2FkUmVjZXBjaW9uIiwiYWN0b3J0IjoiMzMzMDMwMzAzMTMwMzAzMDMwMzAzMDM1MzAzMDMwMzAzMzM0MzUzNiJ9.ZTXnjrqGkOXLFZyRPQOe3L8XAG3r187Dm53y7wFzoX4&wrap_subject=3330303031303030303030353030303033343536"
+SOAPAction: "http://recibecfdi.sat.gob.mx/IRecibeCFDIService/Recibe"
+Host: sc1-cfd-cert-cses-recep.southcentralus.cloudapp.azure.com
+Content-Length: 821
+Accept-Encoding: gzip, deflate
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Header><h:EncabezadoCFDI xmlns:h="http://recibecfdi.sat.gob.mx" xmlns="http://recibecfdi.sat.gob.mx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><RfcEmisor>EKU9003173C9</RfcEmisor><UUID>F04226DE-C1AA-46DC-AEAB-13C6E19E9498</UUID><Fecha>2024-11-21T20:01:01</Fecha><NumeroCertificado>30001000000500003456</NumeroCertificado><VersionComprobante>4.0</VersionComprobante></h:EncabezadoCFDI></s:Header><s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><CFDI xmlns="http://recibecfdi.sat.gob.mx"><RutaCFDI>http://certificacionpac.blob.core.windows.net/certificacionpac/F04226DE-C1AA-46DC-AEAB-13C6E19E9498.xml</RutaCFDI></CFDI></s:Body></s:Envelope>
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=utf-8
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+Request-Context: appId=cid-v1:d1c55297-934a-4a4a-9cf9-667abec548d6
+Access-Control-Expose-Headers: Request-Context
+X-Powered-By: ASP.NET
+Date: Fri, 22 Nov 2024 02:07:31 GMT
+Content-Length: 1741
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><AcuseRecepcion xmlns="http://recibecfdi.sat.gob.mx"><AcuseRecepcionCFDI UUID="F04226DE-C1AA-46DC-AEAB-13C6E19E9498" CodEstatus="Comprobante recibido satisfactoriamente" Fecha="2024-11-21T20:07:32.5777217" NoCertificadoSAT="30001000000500003456"><Signature Id="SelloSAT" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#hmac-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/TR/1999/REC-xpath-19991116"><XPath>not(ancestor-or-self::*[local-name()='Signature'])</XPath></Transform></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZCr8xYT/+gGavHRBzWxqu6OLFhi9uzneAeprXrL1ohVOYH68iWDxfNOovXFolxtWizZ6BsaO0ciUJ02qe5mNEg==</DigestValue></Reference></SignedInfo><SignatureValue>MMvf2LJFhae58F6vHiEpWy0rbFf9bt6b6OBRdHWM1TKwixGioaIuWZKTsm0L6lSwyrM24E9VA1mOTLeGq1kXEg==</SignatureValue><KeyInfo><KeyName>EE0080E73B60C832</KeyName><KeyValue><RSAKeyValue><Modulus>vFaF8D45hKlyyZMNJ2e0LFWe1GauIMaaDC4rQR6pM6QvCHgZsb2BpbuAuLe/yYS8TeCZN+rrK9vN79RZkqDAyE3Bq6mMFzhJXvNR6iEH06C/Ps4zrLSKTKWD5u6guwdAkQ/U4Jc18tgRqL5vYMjdqrnkJqatDO6k5dzLBCFt4RJijzsMN0tipC1s5p22v6inV6RVE1dahEk+Yv0CvPy0xtJLshscNIamrXRm56L4XbhN2JVmJxoN5HL0zQIe37BYMzeChkPH2bVajQr8PBWZ9DKPz8pYY4lriCdECH+EfGTtUc0TtyY2KJ5DMa19y9gcGV70VCLi7ouQPmSvIJX3yQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue></KeyInfo></Signature></AcuseRecepcionCFDI></AcuseRecepcion></s:Body></s:Envelope>
+

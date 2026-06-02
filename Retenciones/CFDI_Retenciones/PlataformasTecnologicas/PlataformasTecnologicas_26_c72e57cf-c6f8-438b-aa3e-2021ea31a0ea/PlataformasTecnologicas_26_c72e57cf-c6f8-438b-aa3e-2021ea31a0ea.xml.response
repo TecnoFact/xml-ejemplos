@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Pragma: no-cache
+Request-Context: appId=cid-v1:aa755313-44a3-47e7-88e6-a31ca52fe6ee
+Access-Control-Expose-Headers: Request-Context
+Cache-Control: no-cache
+Date: Fri, 22 Nov 2024 16:45:07 GMT
+Server: Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 1382
+Content-Type: application/json; charset=utf-8
+Expires: -1
+
+{"AcuseRecepcionRetencion":{"uuid":"C72E57CF-C6F8-438B-AA3E-2021EA31A0EA","signature":{"signedInfo":{"canonicalizationMethod":{},"signatureMethod":{},"reference":{"transforms":[{"text":null,"algorithm":"http://www.w3.org/TR/1999/REC-xpath-19991116","<XPath>k__BackingField":"not(ancestor-or-self::*[local-name()='Signature'])"}],"digestMethod":{},"digestValue":"Y8SzyyJs7vBhdIkr767uW5wVDKX1ahXIjyYAdMPdiZqlcVP68ymlb8+sxcJB3Ho2AeEzrPL9m/kWDtstdWnZ4g==","id":null,"uRI":"","type":null},"id":null},"signatureValue":"Yh7zOVMm1Tl6/WzImy/LjoHO8FnmPqe/c5q4nnmdCCqNqSDt3Zg8faXuzk8L+8gNTXfWUc2WfaNj6i8YLnHHww==","keyInfo":{"itemsElementName":null,"text":null,"id":null,"<X509Data>k__BackingField":null,"<KeyName>k__BackingField":"EE0080E73B60C832","<KeyValue>k__BackingField":{"text":null,"<RSAKeyValue>k__BackingField":{"modulus":"vFaF8D45hKlyyZMNJ2e0LFWe1GauIMaaDC4rQR6pM6QvCHgZsb2BpbuAuLe/yYS8TeCZN+rrK9vN79RZkqDAyE3Bq6mMFzhJXvNR6iEH06C/Ps4zrLSKTKWD5u6guwdAkQ/U4Jc18tgRqL5vYMjdqrnkJqatDO6k5dzLBCFt4RJijzsMN0tipC1s5p22v6inV6RVE1dahEk+Yv0CvPy0xtJLshscNIamrXRm56L4XbhN2JVmJxoN5HL0zQIe37BYMzeChkPH2bVajQr8PBWZ9DKPz8pYY4lriCdECH+EfGTtUc0TtyY2KJ5DMa19y9gcGV70VCLi7ouQPmSvIJX3yQ==","exponent":"AQAB"}}},"objectType":null,"id":"SelloSAT"},"codEstatus":"Comprobante recibido satisfactoriamente","fecha":"2024-11-22T10:45:07.4383414","noCertificadoSAT":"30001000000500003456","listaIncidencia":[]}}

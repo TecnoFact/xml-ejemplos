@@ -1,0 +1,143 @@
+POST https://sc1-ret-cert-cses-autentica-2.southcentralus.cloudapp.azure.com/Autenticacion.svc HTTP/1.1
+Content-Type: application/soap+xml; charset=utf-8
+Host: sc1-ret-cert-cses-autentica-2.southcentralus.cloudapp.azure.com
+Content-Length: 4919
+Expect: 100-continue
+Accept-Encoding: gzip, deflate
+
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><s:Header><a:Action s:mustUnderstand="1">http://schemas.xmlsoap.org/ws/2005/02/trust/RST/SCT</a:Action><a:MessageID>urn:uuid:08eac5b6-5166-4eb7-8eb4-72348abd40b1</a:MessageID><a:ReplyTo><a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address></a:ReplyTo><a:To s:mustUnderstand="1" u:Id="_1">https://sc1-ret-cert-cses-autentica-2.southcentralus.cloudapp.azure.com/Autenticacion.svc</a:To><o:Security s:mustUnderstand="1" xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><u:Timestamp u:Id="_0"><u:Created>2024-11-22T23:01:27.264Z</u:Created><u:Expires>2024-11-22T23:06:27.264Z</u:Expires></u:Timestamp><o:BinarySecurityToken u:Id="uuid-05e38159-b026-495e-8c81-5f8cfe34a651-13" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">MIIFeDCCA2CgAwIBAgIUMzAwMDEwMDAwMDA0MDAwMDI0OTUwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWRpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMTkwNjI2MjIzMzI2WhcNMjMwNjI2MjIzMzI2WjCBnzEUMBIGA1UEAxMLU0FUIFBSVUVCQVMxFDASBgNVBCkTC1NBVCBQUlVFQkFTMRQwEgYDVQQKEwtTQVQgUFJVRUJBUzElMCMGA1UELRMcU1BSMTkwNjEzSTUyIC8gQ0FDWDc2MDUxMDFQODEeMBwGA1UEBRMVIC8gQ0FDWDc2MDUxME1HVFNIQzA0MRQwEgYDVQQLEwtTQVQgUFJVRUJBUzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALKEMefwAbkE07Gy07ZIQm7mETva4Zhq4g6qWIVSQDnf0XKwu0Oo/1Yy1zj8LxsR1Gn8Oh+1ndAxZciyWx/ahXCgw5oNBiPYJrNl3QsvzhIC9M8HOKJ16dIIZvUJQ9FvaCQnU1UmzxRor+sgjpW/h0xJTfVk7YSWu+V2/y4y6YclMXk25ETvCJBmKCG0Q0Ukav4F5lgp1+Twxla4lEmb5FkoUv/Pbs9gcQ5OvEpMPyrJllTp5CQ0ZaA6kmE6kwnqCZsKSap1mEHzX8z3IkcL3n6eUHsGWMSiAavXzL/lUGUERZ5ur8PXu3zCG6C4aO/tneTDGF8imhvRc1bTgAW/KPUCAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQELBQADggIBAAHmEbxYLe6Ee3im4OCT8RXFcylV32OH5gd5xU2J6xPktX+H1vBSKU4JZ5ugtyxJCaeBs0JxpTBQ1to3v6Rr0NfjPEDIaa50LX7m5NLtrjn0gHs1rZv0SwK3eFS1EPtiQ9p8GQ4t+JcPoaKD+SvP708vSR7ll8EHoih/ZVacRuLc9ezjMZLPEvin/SMvpA9Wb069+wHwvtB/tpV/SIUI5y9U2pAbWgszdTmljn6ECST4kuQ8P4pCNKgyj3nnPBIBQSuAW3rEbqJ4A+1rWsOr0Y5OaZmsPs0a5l/pxDYz8LfICD1RH27tL0BToJgTjEutVfWJzOHHU6xtOLhPlv5XTxYfRTERpYstm2g1vijoSrbToo2oMEA/abLxdBCLuacyv0aCFO2r8EWI2XF/Yf6QjXmMsuLFJS0M2losEUkpnLCb7uegLuwGTy8gK7rAGcNb8KR0p9x5ateqkGxKvzfHqAcHoFNNfDw9LNyzxw5bA4Bsnuysoy5W12DiRvYcRpu8qYS1I3TglyB/8NYh7HP/3IvQvog+jbKYCWeBPfCxumCmodKGGO8t52RhhYY9KwrnJA8a+X+KukhWOEbw0+Z8LPdJvHg4QBqKXyjrhBDHzZgOXEkz+Zg5sgNmIx2AGruYty7hgwOxSRTl3ZqfOplUqsswljBsPtGPCdIoC1/7JvI5</o:BinarySecurityToken><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#_0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>NTEL3aTBRef+cAXkTQ4pgOnxq5s=</DigestValue></Reference><Reference URI="#_1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>n7Uf3GB5LNLti1ByJc4z7Yp9dsA=</DigestValue></Reference></SignedInfo><SignatureValue>PH8SNYCVBe4lDNznbiHEPbGC1uIw5jyhhlIIEtIXz05jl4uXGSLvMXhk6UUmvrM5rhGQhcGi2xsSijdl1/F//xofRRFXTKqEbg0ZxMFZ6ifRjlYk2OucD9mF0T2xyPlELa5LWr5byeBRNb3/+jsQxbLxhRu5T/cnj+Bs19gwGkfM2p/1/ZomfacjtQiAg2N3ZQGLprrNfFYK5YjjNIAc99hmGTzwODGEWnWmLEp9btnNbsw5e7JSHdUTiClrhLFDGt6w+UjbyAi8mWvkVary8H1I+6EvBH0GuB2jBoLjo6/8u1xOICKkUz4jx6ridlaKB+bMUBGMUPswUJG+SsAN6w==</SignatureValue><KeyInfo><o:SecurityTokenReference><o:Reference ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" URI="#uuid-05e38159-b026-495e-8c81-5f8cfe34a651-13"/></o:SecurityTokenReference></KeyInfo></Signature></o:Security></s:Header><s:Body><t:RequestSecurityToken xmlns:t="http://schemas.xmlsoap.org/ws/2005/02/trust"><t:TokenType>http://schemas.xmlsoap.org/ws/2005/02/sc/sct</t:TokenType><t:RequestType>http://schemas.xmlsoap.org/ws/2005/02/trust/Issue</t:RequestType><t:Entropy><t:BinarySecret u:Id="uuid-028b05cb-735c-4f70-b9f2-0fffdb39daf8-4" Type="http://schemas.xmlsoap.org/ws/2005/02/trust/Nonce">7KP8Rs/eD5kt/yl+0Ung5HzGle0Of/S1DsMgEYAvDXw=</t:BinarySecret></t:Entropy><t:KeySize>256</t:KeySize></t:RequestSecurityToken></s:Body></s:Envelope>
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: application/soap+xml; charset=utf-8
+Server: Microsoft-IIS/10.0
+Set-Cookie: ASP.NET_SessionId=bcgxcrgeiuirabeksvftlige; path=/; HttpOnly; SameSite=Lax
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 22 Nov 2024 23:01:29 GMT
+Content-Length: 2329
+
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><s:Header><a:Action s:mustUnderstand="1">http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/SCT</a:Action><a:RelatesTo>urn:uuid:08eac5b6-5166-4eb7-8eb4-72348abd40b1</a:RelatesTo><o:Security s:mustUnderstand="1" xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><u:Timestamp u:Id="_0"><u:Created>2024-11-22T23:01:29.020Z</u:Created><u:Expires>2024-11-22T23:06:29.020Z</u:Expires></u:Timestamp></o:Security></s:Header><s:Body><t:RequestSecurityTokenResponse xmlns:t="http://schemas.xmlsoap.org/ws/2005/02/trust"><t:TokenType>http://schemas.xmlsoap.org/ws/2005/02/sc/sct</t:TokenType><t:RequestedSecurityToken><c:SecurityContextToken u:Id="uuid-e953f5da-e927-47fd-8510-b921360c38d4-45" xmlns:c="http://schemas.xmlsoap.org/ws/2005/02/sc"><c:Identifier>urn:uuid:c298411c-0074-4442-adb9-ff743db235e6</c:Identifier></c:SecurityContextToken></t:RequestedSecurityToken><t:RequestedAttachedReference><o:SecurityTokenReference xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><o:Reference ValueType="http://schemas.xmlsoap.org/ws/2005/02/sc/sct" URI="#uuid-e953f5da-e927-47fd-8510-b921360c38d4-45"></o:Reference></o:SecurityTokenReference></t:RequestedAttachedReference><t:RequestedUnattachedReference><o:SecurityTokenReference xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><o:Reference URI="urn:uuid:c298411c-0074-4442-adb9-ff743db235e6" ValueType="http://schemas.xmlsoap.org/ws/2005/02/sc/sct"></o:Reference></o:SecurityTokenReference></t:RequestedUnattachedReference><t:RequestedProofToken><t:ComputedKey>http://schemas.xmlsoap.org/ws/2005/02/trust/CK/PSHA1</t:ComputedKey></t:RequestedProofToken><t:Entropy><t:BinarySecret u:Id="uuid-e953f5da-e927-47fd-8510-b921360c38d4-46" Type="http://schemas.xmlsoap.org/ws/2005/02/trust/Nonce">GzYYrZvOdqk1oWq/onraMT03SWgQUOm4v5kwBfe+KhA=</t:BinarySecret></t:Entropy><t:Lifetime><u:Created>2024-11-22T23:01:29.020Z</u:Created><u:Expires>2024-11-23T14:01:29.020Z</u:Expires></t:Lifetime><t:KeySize>256</t:KeySize></t:RequestSecurityTokenResponse></s:Body></s:Envelope>
+
+------------------------------------------------------------------
+POST https://sc1-ret-cert-cses-autentica-2.southcentralus.cloudapp.azure.com/Autenticacion.svc HTTP/1.1
+Content-Type: application/soap+xml; charset=utf-8
+Host: sc1-ret-cert-cses-autentica-2.southcentralus.cloudapp.azure.com
+Content-Length: 1901
+Expect: 100-continue
+Accept-Encoding: gzip, deflate
+
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><s:Header><a:Action s:mustUnderstand="1">http://tempuri.org/IAutenticacion/Autentica</a:Action><a:MessageID>urn:uuid:5cfe0997-ad57-4264-aa08-69013d42c136</a:MessageID><a:ReplyTo><a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address></a:ReplyTo><a:To s:mustUnderstand="1">https://sc1-ret-cert-cses-autentica-2.southcentralus.cloudapp.azure.com/Autenticacion.svc</a:To><o:Security s:mustUnderstand="1" xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><u:Timestamp u:Id="_0"><u:Created>2024-11-22T23:01:28.024Z</u:Created><u:Expires>2024-11-22T23:06:28.024Z</u:Expires></u:Timestamp><c:SecurityContextToken u:Id="uuid-e953f5da-e927-47fd-8510-b921360c38d4-45" xmlns:c="http://schemas.xmlsoap.org/ws/2005/02/sc"><c:Identifier>urn:uuid:c298411c-0074-4442-adb9-ff743db235e6</c:Identifier></c:SecurityContextToken><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#hmac-sha1"/><Reference URI="#_0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>4LckHFL0Ieh1I9/CYtlHnKMJ9xo=</DigestValue></Reference></SignedInfo><SignatureValue>EvZD4/RsE3Df2zgbwGj8I0cvdvo=</SignatureValue><KeyInfo><o:SecurityTokenReference><o:Reference ValueType="http://schemas.xmlsoap.org/ws/2005/02/sc/sct" URI="#uuid-e953f5da-e927-47fd-8510-b921360c38d4-45"/></o:SecurityTokenReference></KeyInfo></Signature></o:Security></s:Header><s:Body><Autentica xmlns="http://tempuri.org/"/></s:Body></s:Envelope>
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: application/soap+xml; charset=utf-8
+Server: Microsoft-IIS/10.0
+Set-Cookie: ASP.NET_SessionId=peyqr03gjwmqp5qz13oxu1oi; path=/; HttpOnly; SameSite=Lax
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 22 Nov 2024 23:01:29 GMT
+Content-Length: 1170
+
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><s:Header><a:Action s:mustUnderstand="1">http://tempuri.org/IAutenticacion/AutenticaResponse</a:Action><a:RelatesTo>urn:uuid:5cfe0997-ad57-4264-aa08-69013d42c136</a:RelatesTo><o:Security s:mustUnderstand="1" xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><u:Timestamp u:Id="_0"><u:Created>2024-11-22T23:01:29.757Z</u:Created><u:Expires>2024-11-22T23:06:29.757Z</u:Expires></u:Timestamp></o:Security></s:Header><s:Body><AutenticaResponse xmlns="http://tempuri.org/"><AutenticaResult>eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE3MzIzMTY0ODksImV4cCI6MTczMjM1MjQ4OSwiaWF0IjoxNzMyMzE2NDg5LCJpc3MiOiJtaVN1cGVySWRlbnRpdHlQcm92aWRlciIsImFjdG9ydCI6IjMzMzAzMDMwMzEzMDMwMzAzMDMwMzAzNDMwMzAzMDMwMzIzNDM5MzUifQ.8-JrA3IlYmTQLWG467zCo9RM-LcDXKSgTzsj0tdCZOU&amp;wrap_subject=3330303031303030303030343030303032343935</AutenticaResult></AutenticaResponse></s:Body></s:Envelope>
+
+------------------------------------------------------------------
+CONNECT sc1-ret-cert-cses-cancelacion.southcentralus.cloudapp.azure.com:443 HTTP/1.1
+Host: sc1-ret-cert-cses-cancelacion.southcentralus.cloudapp.azure.com
+
+A SSLv3-compatible ClientHello handshake was found. Fiddler extracted the parameters below.
+
+Version: 3.3 (TLS/1.2)
+Random: 67 41 0D 49 7B F0 ED 6B 71 EA 46 02 37 C8 43 CE BA B2 69 F8 56 B7 C4 CD D4 55 E9 C3 7A 22 FD 9B
+"Time": 01/11/2008 11:57:59 p. m.
+SessionID: 50 08 00 00 C8 D4 58 87 B0 DB 66 A0 34 CC A2 FD 02 BF 5D 4E 0F BC 59 5A 5D 9A CA A0 17 71 0D 9E
+Extensions: 
+	server_name	sc1-ret-cert-cses-cancelacion.southcentralus.cloudapp.azure.com
+	supported_groups	x25519 [0x1d], secp256r1 [0x17], secp384r1 [0x18]
+	ec_point_formats	uncompressed [0x0]
+	signature_algs	rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha1, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_sha1, dsa_sha1, rsa_pkcs1_sha512, ecdsa_secp521r1_sha512
+	SessionTicket	empty
+	extended_master_secret	empty
+	renegotiation_info	00
+Ciphers: 
+	[C02C]	TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+	[C02B]	TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+	[C030]	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	[C02F]	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	[C024]	TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+	[C023]	TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
+	[C028]	TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+	[C027]	TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+	[C00A]	TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+	[C009]	TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+	[C014]	TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+	[C013]	TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+	[009D]	TLS_RSA_WITH_AES_256_GCM_SHA384
+	[009C]	TLS_RSA_WITH_AES_128_GCM_SHA256
+	[003D]	TLS_RSA_WITH_AES_256_CBC_SHA256
+	[003C]	TLS_RSA_WITH_AES_128_CBC_SHA256
+	[0035]	TLS_RSA_WITH_AES_256_CBC_SHA
+	[002F]	TLS_RSA_WITH_AES_128_CBC_SHA
+
+Compression: 
+	[00]	NO_COMPRESSION
+
+
+
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 17:01:28.983
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls12
+Cipher: Aes256 256bits
+Hash Algorithm: Sha384 ?bits
+Key Exchange: ECDHE_RSA (0xae06) 384bits
+
+== Server Certificate ==========
+[Subject]
+  CN=*.cer.clouda.sat.gob.mx, L=Coyoacan, S=CDMX, C=MX, E=rafael.astilleros@sat.gob.mx, OU=AGACT, O=Servicio de Administracion Tributaria
+
+[Issuer]
+  CN=AC3 CICLO DE VIDA DE CERTIFICADOS DIGITALES, L=COYOACAN, OU=ACSMC/AGCTI/SAT, O=SERVICIO DE ADMINISTRACION TRIBUTARIA, C=MX
+
+[Serial Number]
+  1EBEA01048204E77935B06103C1803F2
+
+[Not Before]
+  13/05/2024 11:42:37 a. m.
+
+[Not After]
+  13/05/2026 11:42:37 a. m.
+
+[Thumbprint]
+  9C9F9DA88776B46885EFC6837C7AD892188AD928
+
+[SubjectAltNames]
+*.api.dev.clouda.sat.gob.mx
+
+
+------------------------------------------------------------------
+POST https://sc1-ret-cert-cses-cancelacion.southcentralus.cloudapp.azure.com/api/cancelauno HTTP/1.1
+Authorization: WRAP access_token="eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE3MzIzMTY0ODksImV4cCI6MTczMjM1MjQ4OSwiaWF0IjoxNzMyMzE2NDg5LCJpc3MiOiJtaVN1cGVySWRlbnRpdHlQcm92aWRlciIsImFjdG9ydCI6IjMzMzAzMDMwMzEzMDMwMzAzMDMwMzAzNDMwMzAzMDMwMzIzNDM5MzUifQ.8-JrA3IlYmTQLWG467zCo9RM-LcDXKSgTzsj0tdCZOU&wrap_subject=3330303031303030303030343030303032343935"
+Accept: application/xml
+Content-Type: application/xml
+Host: sc1-ret-cert-cses-cancelacion.southcentralus.cloudapp.azure.com
+Content-Length: 3660
+Expect: 100-continue
+
+<Cancelacion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" RfcEmisor="EKU9003173C9" Fecha="2024-11-22T17:01:28" xmlns="http://www.sat.gob.mx/esquemas/retencionpago/1"><Folios><Folio UUID="7cf4ed8b-a7d9-4e6a-8255-195d95a5f498" Motivo="02" /></Folios><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><DigestValue>WFVn6NS+eaEioNjXoI0i6cwtQ/TtVtUwH40Fdz6gfUc=</DigestValue></Reference></SignedInfo><SignatureValue>qfznIKXGZI3gp6KEhghBLpjSBJhnHT1WgnEQagrmtT1p3isdsS1ghtA1Vy8VFnlviBASiCzbXRppMyizFetT1AsSDglSRzqtauQxTuRjxGANLq/ktpFSw3KMgpeS8EkhWiGf8Sdr63Sk5taAphvLLqQ36pDNVsEfJDbIciraMNThwsOEQaT8M57Eud3FyQYKuS9DwXCsbtEpDJnuB/1G1kLjJSISJ5zjtpzbgr5DO02Arj0zA4xyyiHURl3yYL7gJ/3LRSJaePIN++ufq+4vjhFLl41g4oJlmHS41CinDssDj3YuHbZWsZ5NKIHUDe0XpTWp7nf/Zou/yUi5Cm0tiQ==</SignatureValue><KeyInfo><X509Data><X509IssuerSerial><X509IssuerName>OID.1.2.840.113549.1.9.2=responsable: ACDMA-SAT, OID.2.5.4.45=2.5.4.45, L=COYOACAN, S=CIUDAD DE MEXICO, C=MX, PostalCode=06370, STREET=3ra cerrada de caliz, E=oscar.martinez@sat.gob.mx, OU=SAT-IES Authority, O=SERVICIO DE ADMINISTRACION TRIBUTARIA, CN=AC UAT</X509IssuerName><X509SerialNumber>292233162870206001759766198462772978647764840758</X509SerialNumber></X509IssuerSerial><X509Certificate>MIIFsDCCA5igAwIBAgIUMzAwMDEwMDAwMDA1MDAwMDM0MTYwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWxpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMjMwNTE4MTE0MzUxWhcNMjcwNTE4MTE0MzUxWjCB1zEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gVkFEQTgwMDkyN0RKMzEeMBwGA1UEBRMVIC8gVkFEQTgwMDkyN0hTUlNSTDA1MRMwEQYDVQQLEwpTdWN1cnNhbCAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtmecO6n2GS0zL025gbHGQVxznPDICoXzR2uUngz4DqxVUC/w9cE6FxSiXm2ap8Gcjg7wmcZfm85EBaxCx/0J2u5CqnhzIoGCdhBPuhWQnIh5TLgj/X6uNquwZkKChbNe9aeFirU/JbyN7Egia9oKH9KZUsodiM/pWAH00PCtoKJ9OBcSHMq8Rqa3KKoBcfkg1ZrgueffwRLws9yOcRWLb02sDOPzGIm/jEFicVYt2Hw1qdRE5xmTZ7AGG0UHs+unkGjpCVeJ+BEBn0JPLWVvDKHZAQMj6s5Bku35+d/MyATkpOPsGT/VTnsouxekDfikJD1f7A1ZpJbqDpkJnss3vQIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQsFAAOCAgEAFaUgj5PqgvJigNMgtrdXZnbPfVBbukAbW4OGnUhNrA7SRAAfv2BSGk16PI0nBOr7qF2mItmBnjgEwk+DTv8Zr7w5qp7vleC6dIsZFNJoa6ZndrE/f7KO1CYruLXr5gwEkIyGfJ9NwyIagvHHMszzyHiSZIA850fWtbqtythpAliJ2jF35M5pNS+YTkRB+T6L/c6m00ymN3q9lT1rB03YywxrLreRSFZOSrbwWfg34EJbHfbFXpCSVYdJRfiVdvHnewN0r5fUlPtR9stQHyuqewzdkyb5jTTw02D2cUfL57vlPStBj7SEi3uOWvLrsiDnnCIxRMYJ2UA2ktDKHk+zWnsDmaeleSzonv2CHW42yXYPCvWi88oE1DJNYLNkIjua7MxAnkNZbScNw01A6zbLsZ3y8G6eEYnxSTRfwjd8EP4kdiHNJftm7Z4iRU7HOVh79/lRWB+gd171s3d/mI9kte3MRy6V8MMEMCAnMboGpaooYwgAmwclI2XZCczNWXfhaWe0ZS5PmytD/GDpXzkX0oEgY9K/uYo5V77NdZbGAjmyi8cE2B2ogvyaN2XfIInrZPgEffJ4AB7kFA2mwesdLOCh0BLD9itmCve3A1FGR4+stO2ANUoiI3w3Tv2yQSg4bjeDlJ08lXaaFCLW2peEXMXjQUk7fmpb5MNuOUTW6BE=</X509Certificate></X509Data></KeyInfo></Signature></Cancelacion>
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Length: 1725
+Content-Type: application/xml; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 22 Nov 2024 23:01:31 GMT
+
+<?xml version="1.0"?><Acuse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Fecha="2024-11-22T17:01:31.5967491" RfcEmisor="EKU9003173C9" WorkProcessId="7751655f-741f-4b57-a826-19a6819d88bf" xmlns="http://www.sat.gob.mx/esquemas/retencionpago/1"><Folios><UUID>7CF4ED8B-A7D9-4E6A-8255-195D95A5F498</UUID><EstatusUUID>1201</EstatusUUID><Motivo>02</Motivo><Extemporaneo>false</Extemporaneo></Folios><Signature Id="SelloSAT" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#hmac-sha512" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/TR/1999/REC-xpath-19991116"><XPath>not(ancestor-or-self::*[local-name()='Signature'])</XPath></Transform></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" /><DigestValue>Ic6WX5pHOsfZtlUSQ8DmA/FNEfpx2KVxDhKN+te/+ovraXCA7tZbwoEglfyIZQUmpbOZPwWgDiDOxt6cbhmvSw==</DigestValue></Reference></SignedInfo><SignatureValue>faTYjlR9nKVGSMJMjgk78FJ6rYF1JNIw6iCoi4IVe9xMjSUFROq8/OEnLQw0cVkjk9K86HXXfdQWkbKU8tbZag==</SignatureValue><KeyInfo><KeyName>30001000000500002554</KeyName><KeyValue><RSAKeyValue><Modulus>hUcUOoGEtSDAlrF8KegQkGKY8aDAe9tNRkf48uj1+YirDP4cMEd8YEelQY1jLu1GINYKf9N9XxmOfHdL4FUr+cuOgrBviaGWcIsJfZ80IGpvox6kUSHoRt+h32yQayW0HuNOp0b3yiBp9Y6jTdYTFTAVzgzUjf4LfVt8n5FejVZ2xERIyROnGgbK8A4xBsPpFazHQkK2PCiYe+LYBm0Ux9UZYkYJ9Mu9rL5c51Sjgq8JJekorp0BzfKadRrSEFyD2Z6GwB0RswjLZQspojZGxUnqlbldvO6TjFUV4MT7EV8P7f2VTS0yr4qSwx0y080zoK10CbIoJXfsFROHypFj5w==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue></KeyInfo></Signature></Acuse>
+
+------------------------------------------------------------------
